@@ -80,10 +80,6 @@ li{
 	list-style: none;
 }
 
-img{
-	max-width: 150px;
-}
-
 p{
 	max-width: 80%;
 	margin: 20px auto;
@@ -93,11 +89,15 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 25px;
+	padding: 25px;	
 }
 
 .persona1, .persona2{
 	padding: 15px;
+}
+
+.persona1 img, .persona2 img{
+	max-width: 18em;
 }
 
 .colors{
