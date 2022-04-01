@@ -1,0 +1,73 @@
+button{
+    border-style: none;
+    background-color: rgba(250, 243, 243, 0.7);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 1fr 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px
+}
+
+nav{grid-column: 1/4;}
+
+nav ul{
+	display: none;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 8px;
+}
+
+#hamBtn {
+    display: block;
+    padding: 4px 0;
+    width: 50px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+
+.open {
+    display: block;
+	text-align: center;
+    background-color: rgb(1, 1, 63);
+}
+
+.transpBtn{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#bookNow {
+    padding: 10px 0;
+}
+
+div.navLogo{
+   grid-row: 1/2;
+   color: white;
+   font-size: .7rem;
+   text-align: center;
+   padding: 8px 0 8px 8px;
+}
+
+.navLogo img {
+    display: block;
+    width: 45px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+div.socialIcons{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+}
