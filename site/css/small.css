@@ -44,7 +44,6 @@ nav ul li{padding: 10px 0;}
 
 nav ul li a{
     display: block;
-    min-width: 100%;
 }
 
 nav ul li.activePage{

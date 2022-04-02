@@ -1,13 +1,21 @@
 @media only screen and (min-width: 64rem){
     header {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr .5fr 50px;
+        grid-template-rows: 1fr .5fr .5fr;
     }
 
     div.navLogo{
         grid-column: 2/3;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 8px 0 8px 8px;
+    }
+
+    nav ul li{
+       width: 100%;
+    }
+
+    nav ul li:hover{
+    	background-color:  rgba(0,0,0,.3);
     }
 
     .navLogo img{
