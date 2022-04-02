@@ -1,0 +1,36 @@
+@media only screen and (min-width: 64rem){
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr 50px;
+    }
+
+    div.navLogo{
+        grid-column: 2/3;
+        font-size: 2rem;
+        padding: 8px 0 8px 8px;
+    }
+
+    .navLogo img{
+        width: 15%;
+    }
+
+    #hamBtn {
+        display:none;
+    }
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center; 
+        background-color: rgb(41, 41, 41);
+        margin: 0;
+    }
+
+    #bookNow {
+        grid-column: 3/4;
+        width: 80%;
+        justify-self: right;
+        margin-right: 30px;
+    }
+}
