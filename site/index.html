@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Temple & Suites Inn Site">
+        <meta name="description" content="Temple Inn & Suits Site">
 
-        <title>Temple Suite</title>
+        <title>Temple Inn & Suits</title>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,11 @@
     </head>
     <body>
         <header>
-            <div class="navLogo">
+            <div class="logo">
                 <a href="index.html"><img src="images/logo.svg" alt="instagram icon"></a>
-                <text>Temple & Suits Inn</text>
+                <text>Temple Inn & Suits</text>
             </div>
-            <button id="bookNow" class="transpBtn" onclick="window.location.href='reservation.html'">BOOK YOUR STAY</button>
+            <button id="bookNow" class="transpBtn" onclick="window.location.href='reservation.html'">BOOK YOUR STAY </button>
             <button id="hamBtn" class="transpBtn">&equiv;</button>
             <nav>
                 <ul id="nav">
@@ -44,10 +44,33 @@
             </div>
         </header>
         <main>
-
+            <picture class="bg">
+                <source media="(max-width: 400px)" srcset="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg">
+                <source media="(min-width: 400px)" srcset="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg">
+                <source media="(min-width: 800px)" srcset="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg">
+                <source media="(min-width: 1200px)" srcset="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg">
+                <img class="bg" 
+                    src="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg" 
+                    data-src="images/linus-mimietz-sgIhwj4cSiU-unsplash.jpg"
+                    alt="">
+            </picture>
+            <section class="content">
+                <div class="temples"></div>
+                <p></p>
+                <div class="weather"></div>
+            </section>
         </main>
         <footer>
-
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="instagram icon"></a>
+                <text>Temple Inn & Suits</text>
+            </div>
+            <hr>
+            <div class="map">
+                <div>email@templeinn.com</div>
+                <div>+55 98 99999-9899</div>
+                <div>🌎 Location Map</div>
+            </div>
         </footer>
         <script src="js/toggle.js"></script>
     </body>

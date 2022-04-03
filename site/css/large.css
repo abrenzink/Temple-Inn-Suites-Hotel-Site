@@ -4,7 +4,7 @@
         grid-template-rows: 1fr .5fr .3fr;
     }
 
-    div.navLogo{
+    div.logo{
         grid-column: 2/3;
         font-size: 1.8rem;
         padding: 8px 0 8px 8px;
@@ -18,9 +18,14 @@
     	background-color:  rgba(0,0,0,.3);
     }
 
-    .navLogo img{
+    .logo img{
         width: 15%;
     }
+    footer div.logo{
+        font-size: 1rem;
+        padding: 8px 0 8px 8px;
+    }
+    footer .logo img{width: 4%;}
 
     #hamBtn {
         display:none;
