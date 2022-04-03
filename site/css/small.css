@@ -4,7 +4,7 @@ button{
 }
 a, a:hover, a:focus, a:active {text-decoration: none; color: inherit;}
 header, footer{
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
 }
 header {
     display: grid;
@@ -75,9 +75,8 @@ div.socialIcons{
 .socialIcons img{
     width: 22px
 }
-body{
-    position: relative;
-}
+body{position: relative;}
+main{padding: 10px 0;}
 picture.bg{
     position: absolute;
 	width: 100%;
@@ -90,4 +89,31 @@ img.bg{
 }
 footer{
     padding: 20px;
+    text-align: center;
+    color: white;
+}
+.spotCard{
+    position: relative;
+    max-width: 85%;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 4px;
+}
+.spotCard img{
+    max-width: 90%;
+    display: block;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+.cardInfoSec{
+    position: absolute;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    top: 12%;
+    left: 15%;
+}
+@media only screen and (max-width: 26rem){
+    .cardInfoSec{top: 8%;max-width: 250px;}
 }
