@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cse.github.io/cse121b-course/week05/temples.json';
+const requestURL = 'https://abrenzink.github.io/Temple-Inn-Suites-Hotel-Site/js/temples.json';
 
 let templesList = []
 
