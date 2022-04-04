@@ -27,8 +27,9 @@ const output = (temples) => {
 
             let services = document.createElement('ul');
             services.innerHTML = "";
+
             temple.services.forEach((x) => {
-                listElement.innerHTML += `
+                services.innerHTML += `
                 <li>${x}</li>`;
             });
 
