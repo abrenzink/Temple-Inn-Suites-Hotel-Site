@@ -11,28 +11,28 @@
     {
         "templeName": "Brigham City Utah Temple",
         "location": "Brigham City, Utah, United States",
-        "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
-        "phone": "(1) 801-296-2100",
+        "adress": "250 S Main St Brigham City, UT 84302-2560, United States",
+        "phone": "(1) 435-695-2170",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
-        "dedicated": "8 January 1995",
+        "dedicated": "23 September 2012",
         "imageUrl": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg"
     },
     {
         "templeName": "Cedar City Utah Temple",
         "location": "Cedar City, Utah, United States",
-        "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
-        "phone": "(1) 801-296-2100",
+        "adress": "280 South Cove Dr, Cedar City UT 84720, United States",
+        "phone": "(1) 435-572-4150",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
-        "dedicated": "8 January 1995",
+        "dedicated": "10 December 2017",
         "imageUrl": "https://assets.ldscdn.org/b2/89/b2891eb1787414ec6995a32c42d03981732c2d6a/cedar_city_utah_temple_exterior.jpeg"
     },
     {
         "templeName": "Draper Utah Temple",
         "location": "Draper, Utah, United States",
-        "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
-        "phone": "(1) 801-296-2100",
+        "adress": "14065 Canyon Vista Ln, Draper UT 84020-5626, United States",
+        "phone": "(1) 801-576-4240",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
-        "dedicated": "8 January 1995",
+        "dedicated": "20 March 2009",
         "imageUrl": "https://assets.ldscdn.org/9d/dc/9ddc03f577e4395b3408d00dcc874fb6b74b36de/draper_utah_temple.jpeg"
     }
 ]
