@@ -11,7 +11,6 @@
     {
         "templeName": "Brigham City Utah Temple",
         "location": "Brigham City, Utah, United States",
-        "dedicated": "23 September 2012",
         "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
         "phone": "(1) 801-296-2100",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -21,7 +20,6 @@
     {
         "templeName": "Cedar City Utah Temple",
         "location": "Cedar City, Utah, United States",
-        "dedicated": "10 December 2017",
         "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
         "phone": "(1) 801-296-2100",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -31,7 +29,6 @@
     {
         "templeName": "Draper Utah Temple",
         "location": "Draper, Utah, United States",
-        "dedicated": "20 March 2009",
         "adress": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
         "phone": "(1) 801-296-2100",
         "services": ["Clothing rental available","No cafeteria available", "No patron housing available", "Distribution center nearby"],
