@@ -13,7 +13,7 @@ fetch(requestURL)
 
 function getTemple(temples) {
 
-    let index = Math.floor(Math.random() * 5);
+    let index = Math.floor(Math.random() * 9);
  
     let card = document.createElement('section');
 

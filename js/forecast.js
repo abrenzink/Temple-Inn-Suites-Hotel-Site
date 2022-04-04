@@ -11,9 +11,6 @@ fetch(forecastURL).then(response => response.json()).then(jsObj => {
     today = today.getDate();
 
     getDays(today, cards)
-
-    console.log(today);
-     
     cards.forEach(createCard);
 
   });
@@ -28,7 +25,6 @@ function getDays(today, array) {
   }
 
 function createCard (day){
-    console.log(day);
     let card = document.createElement('section');
     card.className = 'spotCard';
 

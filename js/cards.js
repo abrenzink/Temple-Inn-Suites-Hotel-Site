@@ -23,15 +23,7 @@ const output = (temples) => {
             location.textContent = temple.location;
 
             let dedicated = document.createElement('h4');
-            dedicated.textContent = temple.dedicated;
-
-            let services = document.createElement('ul');
-            services.innerHTML = "";
-
-            temple.services.forEach((x) => {
-                services.innerHTML += `
-                <li>${x}</li>`;
-            });
+            dedicated.textContent = `Dedication date: ${temple.dedicated}`;
 
             let img = document.createElement('img');
             img.setAttribute('src', temple.imageUrl);
@@ -42,20 +34,27 @@ const output = (temples) => {
             likeImg.setAttribute('src', 'images/like.svg');
             likeImg.setAttribute('alt', 'like button');
             
-
             let redLikeImg = document.createElement('img');
             redLikeImg.className = 'like';
             redLikeImg.setAttribute('src', 'images/redlike.svg');
             redLikeImg.setAttribute('alt', 'like button');
 
+            
+            let services = document.createElement('ul');
+            services.innerHTML = "";
+
+            temple.services.forEach((x) => {
+                services.innerHTML += `
+                <li>${x}</li>`;
+            });
+
             card.appendChild(img);
             card.appendChild(templeName);
             card.appendChild(location);
             card.appendChild(dedicated);
-            card.appendChild(services);
             card.appendChild(likeImg);
-
-
+            card.appendChild(services);
+            
             let favTemple = window.localStorage.getItem("temple");
 
             if(favTemple == temple.templeName){
