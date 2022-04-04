@@ -57,7 +57,16 @@
             <section class="content">
                 <div id="templeInfo"></div>
                 <p></p>
-                <div class="weather"></div>
+                <button id="bookNow2" onclick="window.location.href='reservation.html'">BOOK YOUR STAY </button>
+                <div class="weather spotCard">
+                    <img alt="Weather Icon" src="" id="weathericon" style="display:inline;margin-right:10px ;"/><h1 id="wTitle">Weather Now</h1>
+                    <hr>
+                    <p>Temperature: <span id="current-temp"></span> ºF</p>
+                    <p>Condition: <span  id="condition"></span></p>
+                    <p>Wind speed: <span id="wind-speed"></span> km/h</p>
+                    <p>Wind chill: <span id="wind-chill"></span></p>
+                </div>
+                <div class="forecast"></div>
             </section>
         </main>
         <footer>
@@ -69,11 +78,15 @@
             <div class="map">
                 <div>email@templeinn.com</div>
                 <div>+55 98 99999-9899</div>
-                <div>🌎 Location Map</div>
+                <a target="_blank" href='https://goo.gl/maps/nBoWo5iNPZkdmcpJ8'>Find on the map</a><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701328!2d-77.09772048502732!3d38.98325177955743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sbr!4v1649010955831!5m2!1sen!2sbr" width="100" height="75" style="border:0; margin:10px 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>🌎 4800 Montgomery Ln #300, Bethesda, MD 20814</div>
             </div>
         </footer>
         <script src="js/toggle.js"></script>
         <script src="js/temple.js"></script>
+        <script src="js/current.js"></script>
+        <script src="js/forecast.js"></script>
     </body>
 </html>
 

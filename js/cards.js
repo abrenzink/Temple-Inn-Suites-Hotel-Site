@@ -1,6 +1,7 @@
 const requestURL = 'https://abrenzink.github.io/Temple-Inn-Suites-Hotel-Site/js/temples.json';
 
-let templesList = []
+let templesList = [];
+let favTemples = [];
 
 fetch(requestURL)
     .then(response => response.json())
@@ -13,6 +14,7 @@ const output = (temples) => {
     temples.forEach(
         temple => {
             let card = document.createElement('section');
+            card.className = 'spotCard temples';
 
             let templeName = document.createElement('h3');
             templeName.textContent = temple.templeName;
@@ -23,15 +25,57 @@ const output = (temples) => {
             let dedicated = document.createElement('h4');
             dedicated.textContent = temple.dedicated;
 
+            let services = document.createElement('ul');
+            services.innerHTML = "";
+            temple.services.forEach((x) => {
+                listElement.innerHTML += `
+                <li>${x}</li>`;
+            });
+
             let img = document.createElement('img');
             img.setAttribute('src', temple.imageUrl);
             img.setAttribute('alt', temple.templeName);
 
+            let likeImg = document.createElement('img');
+            likeImg.className = 'like';
+            likeImg.setAttribute('src', 'images/like.svg');
+            likeImg.setAttribute('alt', 'like button');
+            
+
+            let redLikeImg = document.createElement('img');
+            redLikeImg.className = 'like';
+            redLikeImg.setAttribute('src', 'images/redlike.svg');
+            redLikeImg.setAttribute('alt', 'like button');
+
+            card.appendChild(img);
             card.appendChild(templeName);
             card.appendChild(location);
             card.appendChild(dedicated);
-            card.appendChild(img);
+            card.appendChild(services);
+            card.appendChild(likeImg);
 
+
+            let favTemple = window.localStorage.getItem("temple");
+
+            if(favTemple == temple.templeName){
+                card.appendChild(redLikeImg);
+                card.removeChild(likeImg);
+            }else{
+                card.appendChild(likeImg);
+            }
+
+            likeImg.addEventListener('click', () => {
+                card.appendChild(redLikeImg);
+                card.removeChild(likeImg);
+                localStorage.setItem("temple", temple.templeName);
+            });
+
+            redLikeImg.addEventListener('click', () => {
+                card.removeChild(redLikeImg);
+                card.appendChild(likeImg);
+                localStorage.removeItem("temple", temple.templeName);
+            });
+    
             document.querySelector('#temples').appendChild(card);
         }
     );
