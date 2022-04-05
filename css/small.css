@@ -138,7 +138,7 @@ footer{
 #wTitle{
     margin: -50px 0 20px 60px ;
 }
-.forecast{display: flex;}
+.forecast{display: flex; flex-direction: column;}
 #temples{
     display:flex;
     flex-wrap: wrap;
@@ -148,4 +148,9 @@ section.temples{max-width:200px;}
 img.like{
     width:20px;
     margin: 10px auto 0 5px;
+}
+.titles{text-align: center;}
+form{
+    max-width: 80%;
+    margin: 10px auto;
 }

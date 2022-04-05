@@ -44,7 +44,50 @@
             </div>
         </header>
         <main>
+            <h2 class="titles">BOOKING</h2>
+            <form method="post" action="">
+                
+            <fieldset><legend>Registrant's Info</legend>
+                <label class="booking" for="fname">First name*: </label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label class="booking" for="lname"> Last name*: </label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label class="booking" for="email">E-mail: </label><br>
+                <input type="email" id="email" name="email" placeholder="yourname@email.com" required><br>
+                <label class="booking" for="phone">Phone: </label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label class="guestInfo" for="adress">Adress: </label><br>
+                <input type="text" id="adress" name="adress" required><br>
+                <label class="guestInfo" for="city">City: </label><br>
+                <input type="text" id="city" name="city" required><br>
+                <label class="guestInfo" for="zip">Zip Code: </label><br>
+                <input type="text" id="zip" name="zip" required><br>
+                <label class="guestInfo" for="country">Country: </label><br>
+                <input type="text" id="country" name="country" required><br>
 
+                <label class="booking" for="more">
+                    Requests or comments:
+                <textarea id="more" name="more" rows="6"></textarea></label><br>
+            </fieldset>
+
+            
+            <fieldset><legend>Booking Info</legend>
+                <label class="" for="arrival">Arrival: </label><br>
+                <input type="date" id="arrival" name="arrival"><br>
+                <label class="" for="departure">Departure: </label><br>
+                <input type="date" id="departure" name="departure"><br>
+                <label class="" for="number">Number of guests: </label><br>
+                <input type="number" id="number" name="number"><br>
+                <label class="" for="guests">Other guests (add names separated by commas): </label><br>
+                <input type="text" id="guests" name="guests" multiple><br>
+            </fieldset>
+
+         
+
+            <label class="sendBtn"><input class="send" name="button" type="button" value="CONFIRM BOOKING"></label>
+            <input type="hidden" id="postId" name="postId" value="datetime">
+
+            </form>
         </main>
         <script src="js/toggle.js"></script>
     </body>
