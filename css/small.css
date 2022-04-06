@@ -150,7 +150,19 @@ img.like{
     margin: 10px auto 0 5px;
 }
 .titles{text-align: center;}
-form{
-    max-width: 80%;
-    margin: 10px auto;
+form{max-width: 500px;
+    margin: 10px auto;}
+label, input, legend, textarea{
+    margin: 10px; 
+    display: block;
+}
+@media only screen and (min-width: 18rem){
+   form{margin: 0 15px;}
+}
+input:valid{
+    border: 2px solid rgb(0, 134, 2);
+}
+input:invalid{
+    background-color: rgb(255, 190, 190);
+    border: 2px dashed red;
 }
